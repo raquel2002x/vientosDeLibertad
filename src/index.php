@@ -2,5 +2,7 @@
 
 namespace App;
 
+use App\Controllers\ClientesController;
 
-$controller = new ClienteController();
+
+$controller = new ClientesController();
