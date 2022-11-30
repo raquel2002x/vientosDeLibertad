@@ -7,11 +7,11 @@ use App\Database;
 class Cliente{
 
     private ?int $id;
-    private ?string $cliente;
-    private ?string $motivo;
+    private string $cliente;
+    private string $motivo;
     private ?int $teléfono;
-    private ?string $email;
-    private ?int $fecha;
+    private string $email;
+    private ?string $fecha;
 
     private $table = "consultorio";
     private $database;
@@ -44,5 +44,27 @@ class Cliente{
 
         return $clienteList;
     }
-    
+
+    public function getCliente(){
+        return $this->cliente;
+    }
+
+    public function getMotivo(){
+        return $this->motivo;
+    }
+
+    public function getTeléfono(){
+        return $this->teléfono;
+    }
+
+    public function getEmail(){
+        return $this->email;
+    }
+    public function getFecha(){
+        return $this->fecha;
+    }
+
+    public function getId(){
+        return $this->id;
+    }
 }
