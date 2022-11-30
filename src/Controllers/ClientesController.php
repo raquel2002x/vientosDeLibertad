@@ -2,20 +2,23 @@
 
 namespace App\Controllers;
 
-use App\Models\Clientes;
+use App\Core\View;
+use App\Models\Cliente;
 
 class ClientesController{
 
 
     public function __construct(){
-        $this-> index();
+        $this->index();
     }
 
     public function index()
     {
-        $coder = new Clientes;
+        $cliente = new Cliente;
 
-        
 
+        $clientes = $cliente->all();
+
+        new View("clienteList",["cliente" => $clientes]);
     }
 }
