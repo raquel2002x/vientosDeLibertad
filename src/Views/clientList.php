@@ -1,35 +1,42 @@
 <html>
-
+<?php
+    require_once("Components/layout.php");
+?>
 
     <body>
+
+        
         <main>
-            <!-- On tables -->
-            <table class="table-id">...</table>
-            <table class="table-client">...</table>
-            <table class="table-issue">...</table>
-            <table class="table-phone">...</table>
-            <table class="table-email">...</table>
-            <table class="table-dateTime">...</table>
-
-            <!-- On rows -->
-            <tr class="table-primary">...</tr>
-            <tr class="table-secondary">...</tr>
-            <tr class="table-success">...</tr>
-            <tr class="table-danger">...</tr>
-            <tr class="table-warning">...</tr>
-            <tr class="table-info">...</tr>
-
-
-            <!-- On cells (`td` or `th`) -->
+                <table class="table table-striped table-primary">
+        <thead>
             <tr>
-            <td class="table-primary">...</td>
-            <td class="table-secondary">...</td>
-            <td class="table-success">...</td>
-            <td class="table-danger">...</td>
-            <td class="table-warning">...</td>
-            <td class="table-info">...</td>
+            <th scope="col">Id</th>
+            <th scope="col">Clientes</th>
+            <th scope="col">Motivo</th>
+            <th scope="col">Teléfono</th>
+            <th scope="col">Email</th>
+            <th scope="col">Fecha</th>
             </tr>
+        </thead>
+        <tbody>
+            <?php
+            foreach ($data["client"] as $client){
+                echo "
+                <tr>
+                    <td>{$client->getId()}</td>
+                    <td>{$client->getClient()}</td>
+                    <td>{$client->getIssue()}</td>
+                    <td>{$client->getPhone()}</td>
+                    <td>{$client->getEmail()}</td>
+                    <td>{$client->getDateTime()}</td>
+                </tr>            
+                ";
+            }?>
+        </tbody>
+</table>
         </main>
+
+
     </body>
 
 
