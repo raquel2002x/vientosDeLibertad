@@ -4,10 +4,23 @@
 ?>
 
     <body>
-
+    <?php
+        require_once("Components/header.php");
+    ?>
+    
         
         <main>
-                <table class="table table-striped table-primary">
+        <div class= "principalRegistrer">
+            <h3 class= "dateRegistrer">Registro de citas</h3>
+        </div>
+
+        <div class="create">
+            <a href="#?action=create">
+            <button type="" class=""> </button>
+            </a>
+        </div>
+
+        <table class="table table-striped table-primary">
         <thead>
             <tr>
             <th scope="col">Id</th>
@@ -35,7 +48,9 @@
         </tbody>
 </table>
         </main>
-
+        <?php
+            require_once("Components/footer.php");
+        ?>
 
     </body>
 

@@ -9,16 +9,28 @@ class ClientController{
 
 
     public function __construct(){
-        $this->index();
+
+        if (isset($GET["action"]) && ($_GET["action"] == "create")) { {
+                $this->create();
+                return;
+            }
+
+                $this->index();
+
+        }
     }
+
 
     public function index()
     {
         $client = new Client;
-
-
         $clients = $client->all();
-
         new View("clientList",["client" => $clients]);
     }
+    
+    public function create(){
+        new View("createClient");
+    }
+
 }
+
