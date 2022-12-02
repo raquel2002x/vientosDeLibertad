@@ -10,7 +10,7 @@ class ClientController{
 
     public function __construct(){
 
-        if (isset($GET["action"]) && ($_GET["action"] == "create")) { {
+        if (isset($GET["action"]) && ($_GET["action"] == "create")) { 
                 $this->create();
                 return;
             }
@@ -18,7 +18,7 @@ class ClientController{
                 $this->index();
 
         }
-    }
+
 
 
     public function index()

@@ -15,7 +15,7 @@
         </div>
 
         <div class="create">
-            <a href="#?action=create">
+            <a href="?action=create">
             <button type="" class=""> </button>
             </a>
         </div>
