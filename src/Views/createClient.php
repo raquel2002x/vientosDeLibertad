@@ -16,7 +16,7 @@ require_once("Components/header.php");
         <form class="justifyContentCenter " action='?action=store' method="post">
             <div class="inputGroup" style=" margin-bottom: 2rem; width: 90%; margin-left: 5%;">
                 <span class="inputGroupText">Nombre</span>
-                <input class="formControl" type="text" name="coder" required placeholder="Aqui escribir el nombre del coder">
+                <input class="formControl" type="text" name="coder" required placeholder="Aqui escribir el nombre del cliente">
             </div>
             <div class="inputGroup" style="width: 90%; margin-left: 5%;">
                 <span class="inputGroupText">Motivo de la cita</span>
