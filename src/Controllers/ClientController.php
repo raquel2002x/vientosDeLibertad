@@ -10,7 +10,7 @@ class ClientController{
 
     public function __construct(){
 
-        if (isset($GET["action"]) && ($_GET["action"] == "create")) { 
+        if (isset($_GET["action"]) && ($_GET["action"] == "create")) { 
                 $this->create();
                 return;
             }

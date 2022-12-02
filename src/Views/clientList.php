@@ -16,7 +16,7 @@
 
         <div class="create">
             <a href="?action=create">
-            <button type="" class=""> </button>
+            <button type="button" class=""> add client</button>
             </a>
         </div>
 
