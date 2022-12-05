@@ -42,6 +42,9 @@
                     <td>{$client->getPhone()}</td>
                     <td>{$client->getEmail()}</td>
                     <td>{$client->getDateTime()}</td>
+                    <td>
+                        <a href='?action=delete&id={$client->getId()}'>🗑</a>
+                        </td>
                 </tr>            
                 ";
             }?>

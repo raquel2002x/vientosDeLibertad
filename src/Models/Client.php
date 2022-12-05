@@ -67,4 +67,20 @@ class Client{
     public function getId(){
         return $this->id;
     }
+
+    public function save(){
+        $this->database->mysql->query("INSERT INTO `{$this->table}` (`client`, `issue`) VALUES ('$this->client','$this->issue');");
+    }
+
+    public function findById($id){
+        $query = $this->database->mysql->query("SELECT * FROM `{$this->table}` WHERE `id`= {$id}");
+        $result = $query->fetchAll();
+        
+        return new Client($result[0]["id"], $result[0]["client"], $result[0]["issue"], $result[0]["phone"], $result[0]["email"], $result[0]["dateTime"]);
+    }
+    
+    public function destroy(){
+        $query = $this->database->mysql->query("DELETE FROM `{$this->table}` WHERE `{$this->table}`. `id` = {$this->id}");
+    }
+
 }
