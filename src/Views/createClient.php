@@ -20,7 +20,8 @@ require_once("Components/header.php");
             </div>
             <div class="inputGroup" style="width: 90%; margin-left: 10%;">
                 <span class="inputGroupText">Motivo de la cita</span>
-                <textarea class="formControl" area-label="With textarea" rows="4" cols="50"
+                <textarea class="formControl" area-label="With textarea"
+                 rows="4" cols="50"
                  type="text" name="issue" required placeholder="Descripcion del problema"></textarea>
             </div>
             <div class="inputGroup" style="width: 90%; margin-left: 14%;">
