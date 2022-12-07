@@ -69,7 +69,7 @@ class Client{
     }
 
     public function save(){
-        $this->database->mysql->query("INSERT INTO `{$this->table}` (`client`, `issue`) VALUES ('$this->client','$this->issue');");
+        $this->database->mysql->query("INSERT INTO `{$this->table}` (`client`, `issue`,`phone`, `email`) VALUES ('$this->client','$this->issue','$this->phone','$this->email');");
     }
 
     public function findById($id){
@@ -81,6 +81,20 @@ class Client{
     
     public function destroy(){
         $query = $this->database->mysql->query("DELETE FROM `{$this->table}` WHERE `{$this->table}`. `id` = {$this->id}");
+    }
+
+    public function rename($clientNew, $issueNew, $phoneNew, $emailNew)
+    {
+        $this->client = $clientNew;
+        $this->issue = $issueNew;
+        $this->phone = $phoneNew;
+        $this->email = $emailNew;
+    }
+
+    public function update()
+    {
+        $this->database->mysql->query("UPDATE `{$this->table}` SET `client`= '{$this->client}', `issue`= '{$this->issue}', `email`= '{$this->email}', `phone`= '{$this->phone}' WHERE `ID`= {$this->id}"); 
+
     }
 
 }

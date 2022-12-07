@@ -28,6 +28,17 @@ class ClientController{
                 return;
             }
 
+        if (isset($_GET["action"]) && ($_GET["action"] == "edit")) { 
+
+                $this->edit($_GET["id"]);
+                return;
+            }
+        if (isset($_GET["action"]) && ($_GET["action"] == "update")) { 
+
+                $this->update($_POST,$_GET["id"]);
+                return;
+            }
+
                 $this->index();
 
         }
@@ -57,7 +68,22 @@ class ClientController{
         $clientHelper = new Client();
         $client = $clientHelper->findById($id);
         $client->destroy();
+        $this->index();
+    }
 
+    public function edit ($id){
+        $clientHelper = new Client();
+        $client = $clientHelper->findById($id);
+
+        new View ("editClient", ["client" => $client]);
+    }
+
+    public function update(array $request, $id){
+        $clientHelper = new Client();
+        $client = $clientHelper->findById($id);
+        $client->rename($request["client"], $request["issue"], $request["phone"], $request["email"]);
+        $client->update();
+        
         $this->index();
     }
 }

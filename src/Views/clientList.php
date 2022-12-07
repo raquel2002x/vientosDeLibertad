@@ -1,13 +1,9 @@
 <html>
 <?php
     require_once("Components/layout.php");
+    require_once("Components/header.php");
 ?>
-
-    <body>
-    <?php
-        require_once("Components/header.php");
-    ?>
-    
+<body>    
         
         <main>
         <div class= "principalRegistrer">
@@ -44,6 +40,7 @@
                     <td>{$client->getDateTime()}</td>
                     <td>
                         <a href='?action=delete&id={$client->getId()}'>🗑</a>
+                        <a href='?action=edit&id={$client->getId()}'>✏</a>
                         </td>
                 </tr>            
                 ";
