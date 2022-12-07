@@ -35,11 +35,11 @@ class ClientController{
             }
         if (isset($_GET["action"]) && ($_GET["action"] == "update")) { 
 
-                $this->update($_POST,$_GET["id"]);
+                $this->update($_POST, $_GET["id"]);
                 return;
             }
 
-                $this->index();
+        $this->index();
 
         }
 
@@ -57,7 +57,7 @@ class ClientController{
     }
 
     public function store(array $request){
-        $newClient = new Client(null, $request["Client"], $request["issue"], null);
+        $newClient = new Client(null, $request["client"], $request["issue"], $request["phone"], $request["email"], null);
 
         $newClient->save();
 

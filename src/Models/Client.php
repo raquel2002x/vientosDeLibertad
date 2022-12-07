@@ -16,8 +16,8 @@ class Client{
     private $table = "appointments";
     private $database;
 
-    public function __construct($id = null, $client = '', $issue = '', $phone = null, $email = '', $dateTime = null){
-       
+    public function __construct(int $id = null, string $client = '', string $issue = '', int $phone = null, string $email = '', string $dateTime = null){
+
         $this->id = $id;
         $this->client = $client;
         $this->issue = $issue;
@@ -93,7 +93,7 @@ class Client{
 
     public function update()
     {
-        $this->database->mysql->query("UPDATE `{$this->table}` SET `client`= '{$this->client}', `issue`= '{$this->issue}', `email`= '{$this->email}', `phone`= '{$this->phone}' WHERE `ID`= {$this->id}"); 
+        $this->database->mysql->query("UPDATE `{$this->table}` SET `client`= '{$this->client}', `issue`= '{$this->issue}', `email`= '{$this->email}', `phone`= '{$this->phone}' WHERE `id`= {$this->id}"); 
 
     }
 

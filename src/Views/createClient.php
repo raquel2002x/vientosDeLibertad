@@ -21,12 +21,12 @@ require_once("Components/header.php");
             <div class="inputGroup" style="width: 90%; margin-left: 10%;">
                 <span class="inputGroupText">Motivo de la cita</span>
                 <textarea class="formControl" area-label="With textarea"
-                 rows="4" cols="50"
-                 type="text" name="issue" required placeholder="Descripcion del problema"></textarea>
+                rows="4" cols="50"
+                type="text" name="issue" required placeholder="Descripcion del problema"></textarea>
             </div>
             <div class="inputGroup" style="width: 90%; margin-left: 14%;">
                 <span class="inputGroupText">Teléfono</span>
-                <textarea class="formControl" area-label="With textarea" type="text" name="phone" required placeholder="Móvil o fijo"></textarea>
+                <textarea class="formControl" area-label="With textarea" type="text" name="phone" placeholder="Móvil o fijo"></textarea>
             </div>
             <div class="inputGroup" style="width: 90%; margin-left: 15.7%;">
                 <span class="inputGroupText">Email </span>
