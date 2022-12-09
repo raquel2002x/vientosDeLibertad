@@ -45,8 +45,7 @@ class ClientController{
 
 
 
-    public function index()
-    {
+    public function index(){
         $client = new Client;
         $clients = $client->all();
         new View("clientList",["client" => $clients]);
@@ -57,7 +56,9 @@ class ClientController{
     }
 
     public function store(array $request){
-        $newClient = new Client(null, $request["Client"], $request["issue"], null);
+        //var_dump($request);
+        //die();
+        $newClient = new Client(null, $request["client"], $request["issue"], $request["phone"], $request["email"], null);
 
         $newClient->save();
 
@@ -79,6 +80,8 @@ class ClientController{
     }
 
     public function update(array $request, $id){
+        //var_dump($request);
+        //die();
         $clientHelper = new Client();
         $client = $clientHelper->findById($id);
         $client->rename($request["client"], $request["issue"], $request["phone"], $request["email"]);

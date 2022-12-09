@@ -21,11 +21,11 @@ require_once("Components/header.php");
             </div>
             <div class="input-group" style="width: 90%; margin-left: 5%;">
                 <span class="input-group-text">Teléfono</span>
-                <input class="form-control" area-label="With textarea" type="text" name="issue" required value='<?php echo $data["client"]->getPhone() ?>'> 
+                <input class="form-control" area-label="With textarea" type="text" name="phone" required value='<?php echo $data["client"]->getPhone() ?>'> 
             </div>
             <div class="input-group" style="width: 90%; margin-left: 5%;">
                 <span class="input-group-text">Email</span>
-                <input class="form-control" area-label="With textarea" type="text" name="issue" required value='<?php echo $data["client"]->getEmail() ?>'> 
+                <input class="form-control" area-label="With textarea" type="text" name="email" required value='<?php echo $data["client"]->getEmail() ?>'> 
             </div>
             <div class="botones " style="margin-bottom: 2rem;">
                 <input class="btn-lg btn-outline-success go-add-task float" type="submit" value="Crear">
