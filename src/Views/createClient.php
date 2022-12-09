@@ -11,7 +11,7 @@ require_once("Components/header.php");
 
     <h2 class="textCenter" style="marginBottom: 3rem; margin-top: 1rem;">Nuevo registro</h2>
     
-    <a href="./index.php"><button type="button" class="btn btn-primary">Cancelar</button></a>
+    <a href="./index.php"><button type="button" class="btn btn-info">Cancelar</button></a>
 
         <form class="justifyContentCenter " action='?action=store' method="post">
             <div class="inputGroup" style=" margin-bottom: 2rem; width: 90%; margin-left: 14%;">
@@ -32,10 +32,9 @@ require_once("Components/header.php");
                 <span class="inputGroupText">Email </span>
                 <textarea class="formControl" area-label="With textarea" type="text" name="email" required placeholder="Correo electrónico"></textarea>
             </div>
-            <div class="botones " style="margin-bottom: 2rem;">
-                <input class="btn-lg btn-outline-success go-add-task float" type="submit" value="Crear">
-                <input class="btn-lg btn-outline-warning go-add-task float" type="reset" value="Borrar">
-                
+            <div class="btn-outline-info" style="margin-bottom: 2rem;">
+                <input class="btn btn-outline-info" type="submit" value="Crear">
+                <input class="btn btn-outline-info" type="reset" value="Borrar">
             </div>
         </form>
     </main>

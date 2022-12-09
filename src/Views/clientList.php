@@ -12,7 +12,7 @@
 
         <div class="create">
             <a href="?action=create">
-            <button type="button" class=""> add client</button>
+            <button type="button" class="btn btn-outline-info">Añadir cliente</button>
             </a>
         </div>
 
