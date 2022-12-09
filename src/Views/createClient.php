@@ -11,7 +11,7 @@ require_once("Components/header.php");
 
     <h2 class="textCenter" style="marginBottom: 3rem; margin-top: 1rem;">Nuevo registro</h2>
     
-    <a href="./index.php"><button type="button" id="button-cancel" class="btn btn-outline-danger button-cancel">Cancelar</button></a>
+    <a href="./index.php"><button type="button" class="btn btn-primary">Cancelar</button></a>
 
         <form class="justifyContentCenter " action='?action=store' method="post">
             <div class="inputGroup" style=" margin-bottom: 2rem; width: 90%; margin-left: 14%;">
