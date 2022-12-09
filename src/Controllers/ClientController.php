@@ -35,11 +35,11 @@ class ClientController{
             }
         if (isset($_GET["action"]) && ($_GET["action"] == "update")) { 
 
-                $this->update($_POST,$_GET["id"]);
+                $this->update($_POST, $_GET["id"]);
                 return;
             }
 
-                $this->index();
+        $this->index();
 
         }
 
