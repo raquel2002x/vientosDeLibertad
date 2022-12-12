@@ -1,3 +1,6 @@
+.mainFooter{
+    justify-content: space-between;
+}
 .copyright{
     margin-top: 20px;
     padding: 10px;
@@ -7,4 +10,5 @@
 
 .h4{
     background-color: #EDB9FF;
+    justify-content: end;
 }

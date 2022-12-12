@@ -7,14 +7,14 @@
         
         <main>
         <div class= "principalRegistrer">
-            <h3 class= "dateRegistrer">Registro de citas</h3>
+            <h2 class="text-center" style="margin-Bottom: 3rem; margin-top: 1rem;">Registro de Citas</h2>
         </div>
 
         <div class="create">
             <a href="?action=create">
             <button type="button" class="btn btn-outline-info">Añadir cliente</button>
             </a>
-        </div>
+        </div><br>
 
         <table class="table table-striped table-primary">
         <thead>
