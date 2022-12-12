@@ -1,5 +1,7 @@
+<link rel="stylesheet" href="../../Css/header.css">
 <header>
-    <div class= "">
-        <h1 class= "" >Consultorio Vientos de Libertad</h1>
-    </div>
-</header>
+        <div class="logo">
+            <img src="src\Public\images\logo.png" alt="logo">
+            <h2 class= "title">Consultorio Vientos de Libertad</h2>
+        </div>
+</header> 

@@ -1,8 +1,6 @@
 <footer class= "">
-    <div class= "">
-        <div class= "">
-            <h4>© Copyrigth Vientos de Libertad S.A.</h4>
+        <div class= "copyright">
+            <h4>© Copyright Vientos de Libertad</h4>
         </div>
-    </div>
 </footer>
 
