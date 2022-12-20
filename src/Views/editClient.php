@@ -7,7 +7,7 @@ require_once("Components/header.php");
         <main class="card" style="width: 100%; height:27rem; display:flex; justify-content:center;">
 
         <h2 class="text-center" style="margin-Bottom: 3rem; margin-top: 1rem;">Modificar Cita</h2>
-        <a href="./index.php"><button type="button" class="btn btn-outline-info">Cancelar</button></a><br>
+        <a href="./index.php"><button type="button" class="btn btn-danger">Cancelar</button></a><br>
             <form class="justify-content-center " action='?action=update&id=<?php echo $data["client"]->getId() ?>' method="post">
             <div class="input-group" style=" margin-bottom: 2rem; width: 90%; margin-left: 5%;">
                 <span class="input-group-text">Nombre</span>

@@ -10,8 +10,8 @@ require_once("Components/header.php");
     <div class="edit row justify-content-center">
     <main class="card" style="width: 100%; height:27rem; display:flex; justify-content:center;">
     <h2 class="text-center" style="margin-Bottom: 3rem; margin-top: 1rem;">Nuevo Registro</h2>
-    <a href="./index.php"><button type="button" class="btn btn-outline-info">Cancelar</button></a>
-        <form class="justify-content-center " action='?action=store=' method="post">
+    <a href="./index.php"><button type="button" class="btn btn-danger">Cancelar</button></a><br>
+        <form class="justify-content-center " action='?action=store' method="post">
             <div class="input-group" style=" margin-bottom: 2rem; width: 90%; margin-left: 5%;">
                 <span class="input-group-text">Nombre</span>
                 <input class="form-control" type="text" name="client" required placeHolder= "Nombre del client"]>

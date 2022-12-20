@@ -56,8 +56,7 @@ class ClientController{
     }
 
     public function store(array $request){
-        //var_dump($request);
-        //die();
+
         $newClient = new Client(null, $request["client"], $request["issue"], $request["phone"], $request["email"], null);
 
         $newClient->save();
@@ -80,8 +79,7 @@ class ClientController{
     }
 
     public function update(array $request, $id){
-        //var_dump($request);
-        //die();
+
         $clientHelper = new Client();
         $client = $clientHelper->findById($id);
         $client->rename($request["client"], $request["issue"], $request["phone"], $request["email"]);
