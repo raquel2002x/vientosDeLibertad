@@ -1,10 +1,10 @@
-<h1>SCRUD Consulting Room: “Vientos de Libertad”</h1>
+<h1>CRUD Consulting Room: “Vientos de Libertad”</h1>
 <h2>1. Project description:</h2>
 
 <ul>
 <li>This project develops a database with PHP for a client who has an alternative therapy clinic.</li>
-<li>Thiss purpose is to record telephone calls, linked to the day the procedure is carried out, and thus assign an appointment to the patients who call the office</li>
-<li>ThisThe database will be managed by a person who works as an administrator / or in said office.</li>
+<li>This purpose is to record telephone calls, linked to the day the procedure is carried out, and this assign an appointment to the patients who call the office.</li>
+<li>This the database will be managed by a person who works as an administrator or in said office.</li>
 </ul>
 
 
@@ -12,11 +12,11 @@
 <p>Our client requests us:</p>
 
 <ul>
-<li>Visualize in the home of the form, all the appointments</li>
-<li>Have an <strong>"Add"</strong> button to add your clients</li>
-<li>Have a <strong>“Cancel”</strong> button to cancel the form submission and return to the main panel</li>
-<li>Have a <strong>"Reset"</strong> button to delete the data from the fields where it has been entered, staying in the same panel</li>
-<li>Have an <strong>"Edit"</strong> button to be able to correct the data entered</li>
+<li>Visualize in the home of the form, all the appointments.</li>
+<li>Have an <strong>"Add"</strong> button to add your clients.</li>
+<li>Have a <strong>“Cancel”</strong> button to cancel the form submission and return to the main panel.</li>
+<li>Have a <strong>"Reset"</strong> button to delete the data from the fields where it has been entered, staying in the same panel.</li>
+<li>Have an <strong>"Edit"</strong> button to be able to correct the data entered.</li>
 </ul>
 
 <h2>3. Team members:</h2>
@@ -31,7 +31,7 @@
 
 
 <h2>4. Project Demo</h2>
-<p>For live version of the project, run the code with Live Server. See the points 9.1 & 9.2 for more information</p>
+<p>For live version of the project, run the code with Live Server.</p>
 
 <h2>5. Next Steps</h2>
 
@@ -72,36 +72,37 @@
 
 <h2>8. Stacks</h2>
 <ul>
-<li>HTML5</li>
-<li>CSS3</li>
-<li>javaScript</li>
-<li>Boostrap</li>
-<li>mySQL</li>
-<li>PHP</li>
-<li>TDD: Test Driving Design</li>
-<li>Composer</li>
+<li><strong>Frontend:</strong> HTML & CSS3.</li>
+<li><strong>Backend:</strong> PHP.</li>
+<li><strong>Final design & Sketch:</strong> FIGMA.</li>
+<li><strong>Backend:</strong> PHP.</li>
+<li><strong>Database:</strong> MySQL.</li>
 </ul>
 
-<h2>9. Test & Preview</h2>
-<h3>9.1 Test</h3>
-<ul><li><p>Open the <strong>visual studio code terminal</strong> and enter the following command:<strong> vendor/bin/phpunit tests/CoderTest.php</strong></p></ul></li>
-<ul><li><p>The test is correct when the following result appears in the visual studio code terminal:<strong> vOK (4 tests, 4 assertions).</strong></p></ul></li>
-
-<h3>9.2 Preview:</h3>
+<h2>9. Required</h2>
 <ul>
-<li>Access preview with Live Server and use browser inspection</li>
-<li>In the link https://github.com/raquel2002x/vientosDeLibertad access the <strong>CODE</strong> tab</li>
-<li>Within the <strong>CODE</strong> tab copy the link that appears in <strong>HTTPS</strong></li>
-<li>Paste the <strong>HTTPS</strong> code into the <strong>visual studio code terminal</strong></li>
-<li>Update all packages used by the composer app with <strong>composer update</strong></li>
-<li>Install composer using the <strong>composer install</strong> command</li>
+<li>Composer installed.</li>
+<li>MySQL.</li>
+<li>PHP (Minimum, version 7.4).</li>
+</ul>
+
+<h2>To install project:</h2>
+<ul>
+<li>Access preview with Live Server and use browser inspection.</li>
+<li>In the link https://github.com/raquel2002x/vientosDeLibertad access the <strong>CODE</strong> tab.</li>
+<li>Within the <strong>CODE</strong> tab copy the link that appears in <strong> HTTPS.</strong></li>
+<li>In Visual Studio Code run <strong>git clone</strong> an paste the <strong> HTTPS.</strong></li>
+<li>run <strong>composer install.</strong></li>
+<li>Create database in PhpMyAdmin with database name: <strong>vientosdelibertadbbdd</strong></li>
+<li>Import the following database table: <strong>vientosdelibertad\Public\import\appointments.sql</strong></li>
+<li>Test: <strong>vendor/bin/phpunit tests/CoderTest.php</strong> (4 tests, 4 assertions)</li>
 </ul>
 
 <h2>10. Methodology:</h2>
 <ul>
-<li>Pair Programming</li>
-<li>Mob Programming</li>
-<li>AGILE with SCRUM</li>
+<li>Pair Programming.</li>
+<li>Mob Programming.</li>
+<li>AGILE with SCRUM.</li>
 </ul>
 
 
